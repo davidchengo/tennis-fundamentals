@@ -90,6 +90,25 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(s => observer.observe(s));
 
+// ── YouTube click-to-play ──
+document.querySelectorAll('.yt-player').forEach(player => {
+  const activate = () => {
+    const id = player.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    iframe.title = player.getAttribute('aria-label') || 'YouTube video player';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    iframe.loading = 'lazy';
+    // Remove facade, insert iframe
+    player.innerHTML = '';
+    player.appendChild(iframe);
+    player.style.cursor = 'default';
+  };
+  player.addEventListener('click', activate);
+  player.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+});
+
 // ── Animate cards on scroll ──
 const cards = document.querySelectorAll(
   '.level-card, .fw-card, .mental-card, .ag-drill'
