@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tennis Fundamentals — USTA Level 6 & 7</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">🎾 TennisFundamentals</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#techniques">Techniques</a></li>
+        <li><a href="#drills">Drills</a></li>
+        <li><a href="#footwork">Footwork</a></li>
+        <li><a href="#mental">Mental Game</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="hero">
+    <div class="court-lines"></div>
+    <div class="hero-content">
+      <span class="hero-badge">USTA Level 6 &amp; 7</span>
+      <h1>Master Tennis<br /><span class="accent">From the Ground Up</span></h1>
+      <p>Structured technique guides, drills, and checklists designed for beginning and early-intermediate players. Build real fundamentals that last.</p>
+      <div class="hero-actions">
+        <a href="#techniques" class="btn btn-primary">Start Learning</a>
+        <a href="#checklist" class="btn btn-outline">My Checklist</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Core Techniques</span></div>
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Drills</span></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">USTA Levels</span></div>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="ball-float">🎾</div>
+      <div class="court-graphic"></div>
+    </div>
+  </section>
+
+  <!-- ── Level Guide ── -->
+  <section class="levels" id="levels">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who Is This For?</h2>
+        <p>Understand your level, know your goals.</p>
+      </div>
+      <div class="level-cards">
+        <div class="level-card level7">
+          <div class="level-badge">Level 7</div>
+          <h3>Beginner</h3>
+          <p class="level-desc">New to tennis. Learning to rally, understanding scoring, and developing basic stroke form.</p>
+          <ul>
+            <li>✔ Grip introduction</li>
+            <li>✔ Forehand and backhand basics</li>
+            <li>✔ Underhand &amp; beginner serve</li>
+            <li>✔ Court awareness &amp; positioning</li>
+            <li>✔ Short-court rallying</li>
+          </ul>
+        </div>
+        <div class="level-card level6">
+          <div class="level-badge">Level 6</div>
+          <h3>Early Intermediate</h3>
+          <p class="level-desc">Can sustain rallies. Beginning to add consistency, depth, and a first overhand serve.</p>
+          <ul>
+            <li>✔ Semi-western forehand grip</li>
+            <li>✔ Two-handed topspin backhand</li>
+            <li>✔ Overhand flat serve</li>
+            <li>✔ Approach shot &amp; first volley</li>
+            <li>✔ Return of serve fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Techniques ── -->
+  <section class="techniques" id="techniques">
+    <div class="container">
+      <div class="section-header">
+        <h2>Core Techniques</h2>
+        <p>Click any card to expand the full breakdown.</p>
+      </div>
+      <div class="tech-tabs">
+        <button class="tab-btn active" data-tab="grip">Grips</button>
+        <button class="tab-btn" data-tab="forehand">Forehand</button>
+        <button class="tab-btn" data-tab="backhand">Backhand</button>
+        <button class="tab-btn" data-tab="serve">Serve</button>
+        <button class="tab-btn" data-tab="volley">Volley</button>
+        <button class="tab-btn" data-tab="return">Return</button>
+      </div>
+
+      <!-- Grips -->
+      <div class="tab-content active" id="tab-grip">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 7 → 6</span>
+            <h3>Grip Fundamentals</h3>
+            <p>The grip is the only connection between you and the racquet. Getting it right from day one prevents bad habits that are hard to unlearn.</p>
+            <div class="grip-cards">
+              <div class="grip-item">
+                <div class="grip-icon">🤚</div>
+                <div>
+                  <h4>Continental Grip</h4>
+                  <p>Used for serve, volleys, and overhead. Hold the racquet as if shaking hands with it — bevel 2 for right-handers.</p>
+                  <span class="use-tag">Serve · Volley · Overhead · Slice</span>
+                </div>
+              </div>
+              <div class="grip-item">
+                <div class="grip-icon">✋</div>
+                <div>
+                  <h4>Eastern Forehand Grip</h4>
+                  <p>Flat on bevel 3. Great for Level 7 beginners — easier to achieve clean contact with a flat ball flight.</p>
+                  <span class="use-tag">Flat Forehand · Level 7 Start</span>
+                </div>
+              </div>
+              <div class="grip-item">
+                <div class="grip-icon">🖐</div>
+                <div>
+                  <h4>Semi-Western Forehand Grip</h4>
+                  <p>Palm slightly under the handle (bevel 4). Promotes topspin naturally — the goal for Level 6 players.</p>
+                  <span class="use-tag">Topspin Forehand · Level 6</span>
+                </div>
+              </div>
+              <div class="grip-item">
+                <div class="grip-icon">👋</div>
+                <div>
+                  <h4>Eastern Backhand Grip</h4>
+                  <p>Knuckle on bevel 1 (one-handed) or continental + eastern for two-handed. Required for topspin backhand.</p>
+                  <span class="use-tag">One-handed Backhand · Two-handed</span>
+                </div>
+              </div>
+            </div>
+            <div class="tip-box">
+              <span class="tip-icon">💡</span>
+              <p><strong>Coach Tip:</strong> Use the "shake hands" cue for continental and the "gun to the floor" cue to rotate into semi-western. Never squeeze — hold it like a small bird.</p>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Grip Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Edge Dribbling</strong><p>Bounce the ball on the racquet edge (continental grip) 20 times. Builds feel and correct grip pressure.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Grip Switch Drill</strong><p>Hold continental, tap ball up, switch to semi-western, tap again. Repeat for 30 seconds to build muscle memory.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Fence Swings</strong><p>Practice your swing in front of a fence mirror. Check grip position before every swing — 50 reps per grip.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forehand -->
+      <div class="tab-content" id="tab-forehand">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 7 → 6</span>
+            <h3>Forehand Groundstroke</h3>
+            <p>The forehand is usually the most natural shot. For Level 7, focus on contact point and follow-through. Level 6 adds topspin and cross-court direction.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><h4>Ready Position</h4><p>Weight on toes, knees bent, racquet out front in continental. Eyes on the incoming ball.</p></div></div>
+              <div class="step"><div class="step-num">2</div><div><h4>Split Step</h4><p>As opponent strikes, hop and land with feet shoulder-width apart. This primes explosive movement.</p></div></div>
+              <div class="step"><div class="step-num">3</div><div><h4>Unit Turn</h4><p>Rotate shoulders and hips together as a unit. Bring the non-dominant hand and racquet back simultaneously.</p></div></div>
+              <div class="step"><div class="step-num">4</div><div><h4>Low-to-High Swing Path</h4><p>Drop the racquet head below the ball (butt cap pointing down), then swing low-to-high through contact to generate topspin (Level 6).</p></div></div>
+              <div class="step"><div class="step-num">5</div><div><h4>Contact Point</h4><p>Strike the ball in front of the front hip, at roughly waist height. Arm slightly bent at contact.</p></div></div>
+              <div class="step"><div class="step-num">6</div><div><h4>Follow-Through</h4><p>Finish with the racquet high over the non-dominant shoulder ("windshield wiper" for topspin) or across the body for flat.</p></div></div>
+            </div>
+            <div class="mistake-box">
+              <h4>⚠ Common Mistakes</h4>
+              <ul>
+                <li><strong>Late contact:</strong> Ball gets behind the hip. Fix — earlier unit turn.</li>
+                <li><strong>Arm only:</strong> No hip/shoulder rotation. Fix — practice shadow swings leading with the hip.</li>
+                <li><strong>Stiff arm:</strong> Locking the elbow. Fix — keep a slight bend throughout the swing.</li>
+                <li><strong>Wrong grip at contact:</strong> Grip slips during swing. Fix — check grip pressure (firm but not white-knuckle).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Forehand Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Shadow Swings (L7)</strong><p>Without a ball, do 50 forehand swings focusing on unit turn → low-to-high swing path → follow-through.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Hand-Feed Rally (L7)</strong><p>Partner hand-feeds 20 balls to your forehand side. Focus on contact point in front of the body only.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Deep Cross-Court (L6)</strong><p>Rally cross-court forehands targeting the service box extension. 3 sets × 10 consecutive.</p></div></div>
+              <div class="drill-item"><span class="drill-num">4</span><div><strong>Cone Target Drill (L6)</strong><p>Place cones at corners. Hit 10 forehands at each cone. Track accuracy percentage.</p></div></div>
+              <div class="drill-item"><span class="drill-num">5</span><div><strong>Topspin Wall Rally (L6)</strong><p>Hit forehands against a practice wall with a low-to-high swing, aiming above a 1-meter tape line for 2 minutes.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backhand -->
+      <div class="tab-content" id="tab-backhand">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 7 → 6</span>
+            <h3>Backhand Groundstroke</h3>
+            <p>Level 7 players learn the two-handed backhand for stability. Level 6 players refine topspin and begin exploring the slice backhand.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><h4>Two-Handed Grip Setup</h4><p>Dominant hand in eastern backhand grip (bevel 1), non-dominant hand above in eastern forehand grip. Both hands work together.</p></div></div>
+              <div class="step"><div class="step-num">2</div><div><h4>Early Preparation</h4><p>As soon as ball crosses the net, rotate away from the net — both hands on the racquet, weight shifting to the back foot.</p></div></div>
+              <div class="step"><div class="step-num">3</div><div><h4>Hip Drive</h4><p>Drive the front hip toward the target to generate power. The non-dominant arm pulls through as the lead force.</p></div></div>
+              <div class="step"><div class="step-num">4</div><div><h4>Contact Point</h4><p>Ball struck in front of the body (further in front than forehand) at waist height. Racquet face slightly closed at contact for topspin.</p></div></div>
+              <div class="step"><div class="step-num">5</div><div><h4>Follow-Through</h4><p>Finish high — racquet ends up over the front shoulder, both arms extended. Hips fully rotated to face the net.</p></div></div>
+            </div>
+            <div class="bonus-card">
+              <h4>🍰 Slice Backhand (Level 6+)</h4>
+              <p>Switch to continental grip. High-to-low swing path — racquet brushes under the ball. Great for defensive shots, approach shots, and breaking up opponents' rhythm. Keep the follow-through low and long, not chopping down.</p>
+            </div>
+            <div class="mistake-box">
+              <h4>⚠ Common Mistakes</h4>
+              <ul>
+                <li><strong>Pulling the left hand off too early:</strong> Causes the ball to go wide. Keep both hands on until after contact.</li>
+                <li><strong>Too much arm:</strong> Not using the hip/shoulder. Fix — shadow swings leading with the hip.</li>
+                <li><strong>Too late:</strong> Contacting the ball beside or behind the body. Fix — turn earlier.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Backhand Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Wall Tap Drill (L7)</strong><p>Stand 2m from a wall. Tap the ball softly with two-handed backhand strokes for 1 minute. Focus on keeping both hands connected.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Feed &amp; Rally (L7)</strong><p>Partner feeds 20 balls to the backhand side. Focus only on hitting in front of the body.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Down-the-Line Backhand (L6)</strong><p>Rally backhand down the line. 3 sets × 8 consecutive. Build directional control.</p></div></div>
+              <div class="drill-item"><span class="drill-num">4</span><div><strong>Slice &amp; Approach (L6)</strong><p>Feed a short ball; hit a slice backhand approach, then close to the net for a volley.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Serve -->
+      <div class="tab-content" id="tab-serve">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 7 → 6</span>
+            <h3>The Serve</h3>
+            <p>Level 7 begins with the underhand/push serve or beginner overhand. Level 6 develops a full continental-grip flat serve with consistent ball toss.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><h4>Stance &amp; Grip</h4><p>Stand sideways at the baseline (platform or pinpoint stance). Use <strong>continental grip</strong> — critical for long-term development even at Level 7.</p></div></div>
+              <div class="step"><div class="step-num">2</div><div><h4>Ball Toss</h4><p>Hold the ball with fingertips, not the palm. Toss to 1 o'clock (slightly right and in front), roughly 12–18 inches above contact. This is the #1 skill to practice separately.</p></div></div>
+              <div class="step"><div class="step-num">3</div><div><h4>Trophy Position</h4><p>As the ball rises, bend the knees and load weight on the back leg. Racquet arm forms an L-shape (trophy position). Both eyes on the ball.</p></div></div>
+              <div class="step"><div class="step-num">4</div><div><h4>Leg Drive</h4><p>Extend the knees to drive upward as you swing. The serve is a full-body shot, not just an arm swing.</p></div></div>
+              <div class="step"><div class="step-num">5</div><div><h4>Contact &amp; Pronation</h4><p>Strike the ball at full arm extension. Pronate the forearm (turn like tightening a screwdriver) at contact for pace and spin control.</p></div></div>
+              <div class="step"><div class="step-num">6</div><div><h4>Follow-Through</h4><p>Finish with the racquet arm crossing to the opposite hip. Land inside the baseline on the front foot.</p></div></div>
+            </div>
+            <div class="tip-box">
+              <span class="tip-icon">💡</span>
+              <p><strong>Ball Toss Practice:</strong> Toss the ball and let it drop — it should land inside your front foot, slightly to the right. Do 20 tosses without swinging to master this first.</p>
+            </div>
+            <div class="mistake-box">
+              <h4>⚠ Common Mistakes</h4>
+              <ul>
+                <li><strong>Wrong grip:</strong> Eastern forehand grip on serve limits pronation and ceiling height.</li>
+                <li><strong>Inconsistent toss:</strong> The single biggest cause of double faults. Fix — isolate toss practice daily.</li>
+                <li><strong>No leg drive:</strong> Serving only with the arm. Fix — practice "trophy jump" drills.</li>
+                <li><strong>Elbow drop:</strong> Dropping the elbow in the backswing creates a sling motion. Fix — keep the elbow high (L-shape).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Serve Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Isolated Ball Toss (L7+)</strong><p>Toss the ball 50 times without swinging. It must land consistently on a coin placed on the court.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Short Court Serve (L7)</strong><p>Serve from inside the service line. Reduces distance, builds form confidence without power pressure.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Trophy Freeze (L7)</strong><p>Practice swinging to the trophy position and holding it for 3 seconds. Check: back knee bent, elbow at ear level, eyes on ball spot.</p></div></div>
+              <div class="drill-item"><span class="drill-num">4</span><div><strong>Kick Serve Intro (L6)</strong><p>Toss slightly to the left (11 o'clock). Swing upward and to the right with pronation. Aim for net clearance and heavy topspin.</p></div></div>
+              <div class="drill-item"><span class="drill-num">5</span><div><strong>Serve to Box (L6)</strong><p>Target wide, body, and T with 10 serves each. Track percentage in each zone. Goal: 60%+ first serve in.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volley -->
+      <div class="tab-content" id="tab-volley">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 6 Focus</span>
+            <h3>Volley</h3>
+            <p>Volleys are punch shots hit before the ball bounces. Beginners often over-swing — the key is a compact, firm-wristed block with continental grip.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><h4>Continental Grip (Always)</h4><p>Both forehand and backhand volleys use the continental grip. No grip switch needed — makes volleying faster and more reliable.</p></div></div>
+              <div class="step"><div class="step-num">2</div><div><h4>Ready Position at Net</h4><p>Stand 2–3 feet inside the service line. Knees bent, weight on toes, racquet out front at chest height.</p></div></div>
+              <div class="step"><div class="step-num">3</div><div><h4>Split Step</h4><p>As your opponent strikes, split step to load your legs and be ready to move in any direction.</p></div></div>
+              <div class="step"><div class="step-num">4</div><div><h4>Punch &amp; Block</h4><p>Step forward (front foot toward the target) as you make contact. The swing is a compact punch — no backswing. Firm wrist throughout.</p></div></div>
+              <div class="step"><div class="step-num">5</div><div><h4>Angle &amp; Placement</h4><p>Angle the face slightly open (upward) for low balls, flatter for high balls above the net. Direct the ball cross-court or into open space.</p></div></div>
+            </div>
+            <div class="bonus-card">
+              <h4>🎯 Approach Shot → First Volley (Level 6)</h4>
+              <p>When a short ball sits up, attack it with a deep approach shot (backhand slice or forehand drive), then immediately move forward. Split step as your opponent hits and punch your first volley for a winner.</p>
+            </div>
+            <div class="mistake-box">
+              <h4>⚠ Common Mistakes</h4>
+              <ul>
+                <li><strong>Too much backswing:</strong> Causes late contact and errors. Fix — keep the racquet in front, punch only.</li>
+                <li><strong>Wrong grip:</strong> Switching to forehand grip. Fix — drill with continental only.</li>
+                <li><strong>Standing still:</strong> Not stepping through. Fix — practice "step and punch" footwork pattern.</li>
+                <li><strong>Too far from net:</strong> Volleying from no-man's land. Fix — move up to just inside the service line.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Volley Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Catch &amp; Release (L6)</strong><p>Partner stands at baseline and gently tosses balls at the net player who blocks them back — no backswing allowed. 20 reps each side.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Two-Volley Combo (L6)</strong><p>Baseline player feeds a ball; net player volleys, moves to close, and hits a second punch volley winner. 15 reps.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Rapid-Fire Volleys (L6)</strong><p>Coach or partner feeds 5 quick balls alternating forehand and backhand volleys. No reset between shots. 4 sets.</p></div></div>
+              <div class="drill-item"><span class="drill-num">4</span><div><strong>Approach &amp; Volley (L6)</strong><p>Feed a short ball. Player hits approach shot, closes to net, and finishes with a volley. Run 20 complete sequences.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Return -->
+      <div class="tab-content" id="tab-return">
+        <div class="tech-layout">
+          <div class="tech-info">
+            <span class="level-tag">Level 6 Focus</span>
+            <h3>Return of Serve</h3>
+            <p>The return is the second most important shot in tennis. Level 6 players learn to neutralize the serve consistently and begin to apply direction.</p>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><div><h4>Starting Position</h4><p>Stand near the baseline corner, 1–2 feet behind the baseline (adjust for serve speed). Weight on toes, knees bent.</p></div></div>
+              <div class="step"><div class="step-num">2</div><div><h4>Read the Toss</h4><p>Watch the server's ball toss to predict serve direction (wide, body, T). A toss to the right hints wide; centered hints T or body.</p></div></div>
+              <div class="step"><div class="step-num">3</div><div><h4>Split Step at Ball Strike</h4><p>Hop and land right as the server's racquet makes contact with the ball. This is critical — timing the split step to the server, not the ball.</p></div></div>
+              <div class="step"><div class="step-num">4</div><div><h4>Compact Backswing</h4><p>Use a shorter backswing than a groundstroke — the serve is already coming with pace. Unit turn is still essential.</p></div></div>
+              <div class="step"><div class="step-num">5</div><div><h4>Block or Drive</h4><p>Level 6: Against fast serves, use a blocking motion (short swing). Against slower serves, drive through the ball with a regular groundstroke.</p></div></div>
+              <div class="step"><div class="step-num">6</div><div><h4>Direction &amp; Recovery</h4><p>Aim cross-court (safer target, larger court). After the return, immediately recover to the center baseline.</p></div></div>
+            </div>
+            <div class="tip-box">
+              <span class="tip-icon">💡</span>
+              <p><strong>First Priority:</strong> Get the ball back in play. Consistency beats aggression on returns at Levels 6–7. A return that lands in is always better than an error.</p>
+            </div>
+            <div class="mistake-box">
+              <h4>⚠ Common Mistakes</h4>
+              <ul>
+                <li><strong>Too big a backswing:</strong> Ball arrives before the swing completes. Fix — shorten to a compact unit turn.</li>
+                <li><strong>No split step:</strong> Caught flat-footed. Fix — rehearse the timing sequence daily.</li>
+                <li><strong>Trying for a winner:</strong> Overaggressive error. Fix — aim cross-court, 3 feet over the net.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-drills">
+            <h4>Return Drills</h4>
+            <div class="drill-list">
+              <div class="drill-item"><span class="drill-num">1</span><div><strong>Serve &amp; Return Rally (L6)</strong><p>One player serves, the other returns cross-court — keep it going for 5+ shots. Switch roles every 10 serves.</p></div></div>
+              <div class="drill-item"><span class="drill-num">2</span><div><strong>Read the Toss (L6)</strong><p>Server tosses the ball only — returner calls "wide", "T", or "body" before the toss reaches its peak. 20 reps to build anticipation.</p></div></div>
+              <div class="drill-item"><span class="drill-num">3</span><div><strong>Block Return (L6)</strong><p>Slow-pitch machine or partner serves at 70% pace. Returner blocks the ball back with minimal swing — focus on solid contact only.</p></div></div>
+              <div class="drill-item"><span class="drill-num">4</span><div><strong>Return Down the Line (L6)</strong><p>Partner serves wide. Returner redirects the ball down the line — advanced direction control drill.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footwork Section ── -->
+  <section class="footwork" id="footwork">
+    <div class="container">
+      <div class="section-header">
+        <h2>Footwork &amp; Movement</h2>
+        <p>Great strokes fail without great footwork. These patterns apply at every level.</p>
+      </div>
+      <div class="footwork-grid">
+        <div class="fw-card">
+          <div class="fw-icon">⬛</div>
+          <h4>Split Step</h4>
+          <p>A small hop landing on both feet as your opponent makes contact. Loads the legs for instant reaction in any direction. Do this on every single shot.</p>
+          <span class="fw-tag">L7 &amp; L6</span>
+        </div>
+        <div class="fw-card">
+          <div class="fw-icon">↔️</div>
+          <h4>Shuffle Steps</h4>
+          <p>Side-to-side movement keeping you balanced and ready. Never cross your feet laterally when close to the ball.</p>
+          <span class="fw-tag">L7 &amp; L6</span>
+        </div>
+        <div class="fw-card">
+          <div class="fw-icon">↗️</div>
+          <h4>Crossover Step</h4>
+          <p>For balls far to one side, lead with the outside foot crossing over to cover ground quickly before transitioning to shuffle steps.</p>
+          <span class="fw-tag">L7 &amp; L6</span>
+        </div>
+        <div class="fw-card">
+          <div class="fw-icon">🔃</div>
+          <h4>Recovery Step</h4>
+          <p>After every shot, push off and recover to the center baseline (or net if at net position). Court coverage requires constant recovery.</p>
+          <span class="fw-tag">L7 &amp; L6</span>
+        </div>
+        <div class="fw-card">
+          <div class="fw-icon">⬆️</div>
+          <h4>Approach Step</h4>
+          <p>When a short ball sits up, move forward using short adjustment steps to set up an ideal contact point, then attack through the ball.</p>
+          <span class="fw-tag">L6</span>
+        </div>
+        <div class="fw-card">
+          <div class="fw-icon">🎯</div>
+          <h4>Open vs Closed Stance</h4>
+          <p>Closed stance (stepping in with front foot) provides stability for beginners. Open stance (squaring to the net) allows faster recovery — Level 6 target.</p>
+          <span class="fw-tag">L6</span>
+        </div>
+      </div>
+      <div class="agility-drills">
+        <h3>Agility Drill Circuit</h3>
+        <p class="subtitle">Run 3 rounds, 30 seconds each:</p>
+        <div class="agility-grid">
+          <div class="ag-drill"><span>🟦</span><p>Cone shuffle (baseline to net)</p></div>
+          <div class="ag-drill"><span>🏃</span><p>Spider drill (5 corner sprint)</p></div>
+          <div class="ag-drill"><span>⚡</span><p>T-drill (baseline T-pattern)</p></div>
+          <div class="ag-drill"><span>🔁</span><p>Figure-8 around cones</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mental Game ── -->
+  <section class="mental" id="mental">
+    <div class="container">
+      <div class="section-header light">
+        <h2>Mental Game</h2>
+        <p>Tennis is as much mental as physical. These principles apply from your very first match.</p>
+      </div>
+      <div class="mental-grid">
+        <div class="mental-card">
+          <div class="mental-num">01</div>
+          <h4>One Point at a Time</h4>
+          <p>Each point is independent. A double fault doesn't cause the next one — reset your routine and start fresh every rally.</p>
+        </div>
+        <div class="mental-card">
+          <div class="mental-num">02</div>
+          <h4>The Between-Point Routine</h4>
+          <p>Use a 20-second reset: turn away from the court, take a deep breath, positive self-talk, then walk purposefully to the line.</p>
+        </div>
+        <div class="mental-card">
+          <div class="mental-num">03</div>
+          <h4>Focus on Process, Not Score</h4>
+          <p>Think about your technique cue ("low-to-high", "split step"), not the score. Execution focus reduces anxiety and improves results.</p>
+        </div>
+        <div class="mental-card">
+          <div class="mental-num">04</div>
+          <h4>Positive Body Language</h4>
+          <p>Walk tall, shoulders back, head up — even after errors. Opponent and crowd read body language. Project confidence to feel it.</p>
+        </div>
+        <div class="mental-card">
+          <div class="mental-num">05</div>
+          <h4>Play to Your Strengths</h4>
+          <p>At Levels 6–7, build patterns that lead to your best shots. Set up forehands. Avoid your weaker zones under pressure.</p>
+        </div>
+        <div class="mental-card">
+          <div class="mental-num">06</div>
+          <h4>Embrace Errors</h4>
+          <p>Errors are data, not failures. Every missed shot tells you something about contact point, swing path, or timing. Use them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Progress Checklist ── -->
+  <section class="checklist-section" id="checklist">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Progress Checklist</h2>
+        <p>Check off skills as you master them. Your progress is saved locally.</p>
+      </div>
+      <div class="checklist-columns">
+        <div class="checklist-col">
+          <h3>🟡 Level 7 Skills</h3>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" data-key="l7_1" /><span>Continental grip — can hold correctly</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_2" /><span>Eastern forehand grip — can hold correctly</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_3" /><span>Ready position — weight on toes, knees bent</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_4" /><span>Split step — timing the opponent's contact</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_5" /><span>Forehand — unit turn + contact in front</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_6" /><span>Forehand — follow-through to the shoulder</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_7" /><span>Two-handed backhand — both hands to contact</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_8" /><span>Backhand — contact in front of body</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_9" /><span>Ball toss — consistent 1 o'clock position</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_10" /><span>Serve — trophy position (L-shape arm)</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_11" /><span>Shuffle step lateral movement</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_12" /><span>Crossover step for wide balls</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_13" /><span>Court recovery — center baseline after each shot</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_14" /><span>Sustain a 5-shot forehand rally</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l7_15" /><span>Score a game correctly (love-15-30-40)</span></label>
+          </div>
+        </div>
+        <div class="checklist-col">
+          <h3>🟠 Level 6 Skills</h3>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" data-key="l6_1" /><span>Semi-western forehand grip — comfort and switch speed</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_2" /><span>Topspin forehand — low-to-high swing path</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_3" /><span>Forehand — windshield wiper follow-through</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_4" /><span>Forehand cross-court — 8 of 10 in play</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_5" /><span>Forehand down-the-line — directional control</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_6" /><span>Topspin backhand — hip drive through contact</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_7" /><span>Slice backhand — high-to-low, open racquet face</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_8" /><span>Overhand flat serve — 60% first serve in</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_9" /><span>Serve to wide, body, and T with intent</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_10" /><span>Forehand volley — compact punch, no backswing</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_11" /><span>Backhand volley — compact punch, no backswing</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_12" /><span>Approach shot → close to net → volley sequence</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_13" /><span>Return cross-court — 7 of 10 in play</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_14" /><span>Open-stance groundstroke footwork</span></label>
+            <label class="check-item"><input type="checkbox" data-key="l6_15" /><span>Win a set by following between-point routine</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="progress-bar-area">
+        <div class="progress-label">
+          <span>Overall Progress</span>
+          <span id="progressText">0 / 30</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <button class="btn btn-outline btn-sm" id="resetBtn">Reset Checklist</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">🎾 TennisFundamentals</span>
+        <p>Structured learning for USTA Level 6 &amp; 7 players. Not affiliated with USTA.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Sections</h5>
+        <a href="#techniques">Techniques</a>
+        <a href="#drills">Drills</a>
+        <a href="#footwork">Footwork</a>
+        <a href="#mental">Mental Game</a>
+        <a href="#checklist">Checklist</a>
+      </div>
+      <div class="footer-note">
+        <h5>USTA Levels</h5>
+        <p>Level 7: Beginner, new to the sport.<br />Level 6: Early intermediate, building consistency.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Built with ♥ for tennis development | Open source on GitHub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
