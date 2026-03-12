@@ -225,8 +225,8 @@ img { display: block; max-width: 100%; }
 }
 .level-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 .level-card {
   background: var(--bg);
@@ -246,8 +246,24 @@ img { display: block; max-width: 100%; }
   border-radius: 100px;
   margin-bottom: 16px;
 }
-.level7 .level-badge { background: rgba(255,214,0,0.15); color: var(--yellow); border: 1px solid rgba(255,214,0,0.3); }
-.level6 .level-badge { background: rgba(255,143,0,0.15); color: var(--orange); border: 1px solid rgba(255,143,0,0.3); }
+.levelJC .level-badge { background: rgba(156,39,176,0.15); color: #CE93D8; border: 1px solid rgba(156,39,176,0.3); }
+.level7  .level-badge { background: rgba(255,214,0,0.15);  color: var(--yellow); border: 1px solid rgba(255,214,0,0.3); }
+.level6  .level-badge { background: rgba(255,143,0,0.15);  color: var(--orange); border: 1px solid rgba(255,143,0,0.3); }
+.level5  .level-badge { background: rgba(0,188,212,0.15);  color: #4DD0E1;  border: 1px solid rgba(0,188,212,0.3); }
+.level4  .level-badge { background: rgba(0,150,136,0.15);  color: #4DB6AC;  border: 1px solid rgba(0,150,136,0.3); }
+.level3  .level-badge { background: rgba(33,150,243,0.15); color: #64B5F6;  border: 1px solid rgba(33,150,243,0.3); }
+.level2  .level-badge { background: rgba(103,58,183,0.15); color: #B39DDB;  border: 1px solid rgba(103,58,183,0.3); }
+.level1  .level-badge { background: rgba(255,193,7,0.15);  color: #FFD54F;  border: 1px solid rgba(255,193,7,0.3); }
+
+/* Level card left-border accents */
+.levelJC { border-left: 3px solid #9C27B0; }
+.level7  { border-left: 3px solid #FFD600; }
+.level6  { border-left: 3px solid #FF8F00; }
+.level5  { border-left: 3px solid #00BCD4; }
+.level4  { border-left: 3px solid #009688; }
+.level3  { border-left: 3px solid #2196F3; }
+.level2  { border-left: 3px solid #7E57C2; }
+.level1  { border-left: 3px solid #FFC107; }
 .level-card h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
 .level-desc { color: var(--text-muted); margin-bottom: 20px; }
 .level-card ul { display: flex; flex-direction: column; gap: 10px; }
@@ -708,6 +724,57 @@ img { display: block; max-width: 100%; }
   border-radius: 100px;
   width: 0%;
   transition: width 0.5s ease;
+}
+
+/* ── Checklist Level Tabs ── */
+.checklist-level-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.level-tab-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.level-tab-btn:hover, .level-tab-btn.active {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+.level-tab-content { display: none; }
+.level-tab-content.active { display: block; }
+
+.checklist-single {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 48px;
+}
+.checklist-single h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.check-group.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 24px;
+}
+@media (max-width: 680px) {
+  .check-group.two-col { grid-template-columns: 1fr; }
 }
 
 /* ── Footer ── */
