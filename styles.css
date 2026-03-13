@@ -646,6 +646,7 @@ img { display: block; max-width: 100%; }
 }
 .mental-card h4 { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
 .mental-card p { font-size: 0.88rem; color: rgba(255,255,255,0.6); }
+.mental-card .yt-player { margin-top: 16px; border-radius: 10px; overflow: hidden; }
 
 /* ── Checklist ── */
 .checklist-section {
